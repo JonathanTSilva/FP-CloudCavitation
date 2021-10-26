@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">
   <br>
-  <a href="https://github.com/JonathanTSilva/TP-IFSP"><img src="./Images/logo-ifsp2.png" alt="Markdownify" width="200"></a>
+  <a href="https://github.com/JonathanTSilva/TP-IFSP"><img src="./Images/logo-tcc.png" alt="Markdownify" width="200"></a>
   <br>
   Final Project - Cloud-based system
   <br>

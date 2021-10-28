@@ -3,7 +3,7 @@
   <br>
   <a href="https://github.com/JonathanTSilva/TP-IFSP"><img src="./Images/logo-tcc.png" alt="Markdownify" width="200"></a>
   <br>
-  Final Project - Cloud-based system
+  Final Project - Electrical Engineer
   <br>
 </h1>
 

@@ -8,7 +8,7 @@
 </h1>
 
 <h4 align="center">
-  🧾 
+  🧾 Cloud-based intelligent system for hydraulic pump failure detection.
 </h4>
 
 <!-- PROJECT SHIELDS -->

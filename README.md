@@ -44,3 +44,13 @@
 ## About the Project
 
 Intelligent equipment failure diagnosis systems are essential in industries to prevent failures, reduce downtime and increase plant availability. In this context, this work proposes a methodology for the development of an intelligent cloud-based system for detecting anomalies and identifying failures in a piping system due to malfunctioning pumps, such as cavitation, for example. Relevant information is extracted based on the electrical current of the motor, available in the OPC UA server of the S7-1200 controller. A prototype of a hydraulic piping system was used for data collection and methodology validation. Machine learning tools to extract and select features (such as standard deviation, entropy, signal harmonics, etc.) and an SVM-based model developed in the Node-RED pattern recognition tool are used to diagnose the status of the centrifugal pump. . The results achieved were 81.66% accuracy for cavitation failure detection and 100% for dry operation, with an average cloud classification response time of approximately 35.14 ms. Thus, the methodology is feasible and efficient, indicating an opportunity to improve the use and availability of data coming from the engine by intelligent relays, and the performance of information retrieval from industrial network communication.
+
+## Getting Started
+
+## Quick Guide
+
+## Contributing
+
+## License
+
+## Contact

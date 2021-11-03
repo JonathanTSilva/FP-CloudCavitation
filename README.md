@@ -53,4 +53,6 @@ Intelligent equipment failure diagnosis systems are essential in industries to p
 
 ## License
 
+Distributed under the MIT License. See [LICENSE](https://github.com/JonathanTSilva/TP-IFSP/blob/main/LICENSE) for more information.
+
 ## Contact

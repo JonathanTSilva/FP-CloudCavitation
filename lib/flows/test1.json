@@ -1,0 +1,369 @@
+[
+    {
+        "id": "66c72f5b526ee6ca",
+        "type": "tab",
+        "label": "S71200",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5cbfc7312375154f",
+        "type": "OpcUa-Client",
+        "z": "66c72f5b526ee6ca",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "b15a23cde4c77d10",
+                "ee59cb64f2196a7f",
+                "ecb991182a5f3407"
+            ]
+        ]
+    },
+    {
+        "id": "49ac9084b8e02587",
+        "type": "inject",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=2;datatype=Float",
+        "payloadType": "date",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "5cbfc7312375154f"
+            ]
+        ]
+    },
+    {
+        "id": "b15a23cde4c77d10",
+        "type": "debug",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ee59cb64f2196a7f",
+        "type": "ui_gauge",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "group": "2f132733cce481ca",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Out1",
+        "label": "units",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 740,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c10b7253990e1ac2",
+        "type": "OpcUa-Client",
+        "z": "66c72f5b526ee6ca",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "22c034518749f19f",
+                "c5e440486634a36d"
+            ]
+        ]
+    },
+    {
+        "id": "bbb0768ef63145a4",
+        "type": "inject",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=12;datatype=Float",
+        "payloadType": "date",
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "c10b7253990e1ac2"
+            ]
+        ]
+    },
+    {
+        "id": "22c034518749f19f",
+        "type": "debug",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c5e440486634a36d",
+        "type": "ui_gauge",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "group": "2f132733cce481ca",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "TestDA1",
+        "label": "units",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 750,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b4c9375a27c6db82",
+        "type": "OpcUa-Client",
+        "z": "66c72f5b526ee6ca",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 500,
+        "y": 540,
+        "wires": [
+            [
+                "69471006680f81b1",
+                "bc70341c35d9d30c"
+            ]
+        ]
+    },
+    {
+        "id": "5d5bc0389eae1ede",
+        "type": "inject",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=13;datatype=Float",
+        "payloadType": "date",
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "b4c9375a27c6db82"
+            ]
+        ]
+    },
+    {
+        "id": "69471006680f81b1",
+        "type": "debug",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "bc70341c35d9d30c",
+        "type": "ui_gauge",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "group": "2f132733cce481ca",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "TestDA2",
+        "label": "units",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 750,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "ecb991182a5f3407",
+        "type": "ui_chart",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "group": "2f132733cce481ca",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Out1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ba2f05e567fbad2",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://192.168.0.21:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "2f132733cce481ca",
+        "type": "ui_group",
+        "name": "Pump",
+        "tab": "a781d23877282287",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a781d23877282287",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

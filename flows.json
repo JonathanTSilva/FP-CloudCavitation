@@ -1,0 +1,917 @@
+[
+    {
+        "id": "66c72f5b526ee6ca",
+        "type": "tab",
+        "label": "S71200",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "83561b3d581219c8",
+        "type": "tab",
+        "label": "TCC",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "95858355184c4b42",
+        "type": "tab",
+        "label": "TCC1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3ba2f05e567fbad2",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://192.168.0.21:4840",
+        "secpol": "Basic256Sha256",
+        "secmode": "Sign",
+        "login": true
+    },
+    {
+        "id": "2f132733cce481ca",
+        "type": "ui_group",
+        "name": "Pump",
+        "tab": "a781d23877282287",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a781d23877282287",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ab531975b08fe580",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cb216faf.d9136",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "iot.eclipse.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "60c1c0d5676556b6",
+        "type": "ui_group",
+        "name": "Classifier",
+        "tab": "a781d23877282287",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5cbfc7312375154f",
+        "type": "OpcUa-Client",
+        "z": "66c72f5b526ee6ca",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "b15a23cde4c77d10",
+                "07878be431c357ea"
+            ]
+        ]
+    },
+    {
+        "id": "49ac9084b8e02587",
+        "type": "inject",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=2;datatype=Float",
+        "payloadType": "date",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "5cbfc7312375154f"
+            ]
+        ]
+    },
+    {
+        "id": "b15a23cde4c77d10",
+        "type": "debug",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c10b7253990e1ac2",
+        "type": "OpcUa-Client",
+        "z": "66c72f5b526ee6ca",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "22c034518749f19f"
+            ]
+        ]
+    },
+    {
+        "id": "bbb0768ef63145a4",
+        "type": "inject",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=12;datatype=Float",
+        "payloadType": "date",
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "c10b7253990e1ac2"
+            ]
+        ]
+    },
+    {
+        "id": "22c034518749f19f",
+        "type": "debug",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b4c9375a27c6db82",
+        "type": "OpcUa-Client",
+        "z": "66c72f5b526ee6ca",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 500,
+        "y": 540,
+        "wires": [
+            [
+                "69471006680f81b1"
+            ]
+        ]
+    },
+    {
+        "id": "5d5bc0389eae1ede",
+        "type": "inject",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=13;datatype=Float",
+        "payloadType": "date",
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "b4c9375a27c6db82"
+            ]
+        ]
+    },
+    {
+        "id": "69471006680f81b1",
+        "type": "debug",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a6035067ca7bcbdb",
+        "type": "OpcUa-Client",
+        "z": "83561b3d581219c8",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "d8bc99bcc8537bd3"
+            ]
+        ]
+    },
+    {
+        "id": "32f34818cda2318a",
+        "type": "inject",
+        "z": "83561b3d581219c8",
+        "name": "Dado1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=2;datatype=Float",
+        "payloadType": "date",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "a6035067ca7bcbdb"
+            ]
+        ]
+    },
+    {
+        "id": "d8bc99bcc8537bd3",
+        "type": "debug",
+        "z": "83561b3d581219c8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "da8ca300.2dfe6",
+        "type": "create dataset",
+        "z": "95858355184c4b42",
+        "name": "",
+        "path": "/Users/jonat/.node-red/node_modules/node-red-contrib-machine-learning-v2/test/dataCav2.csv",
+        "saveFolder": "/Users/jonat/.node-red/node_modules/node-red-contrib-machine-learning-v2/test/",
+        "saveName": "tcc",
+        "input": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+        "output": "18",
+        "trainingPartition": "80",
+        "shuffle": true,
+        "seed": "",
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "4fb0a8dc.f6baf8"
+            ]
+        ]
+    },
+    {
+        "id": "44b6f4b0.34d7dc",
+        "type": "load dataset",
+        "z": "95858355184c4b42",
+        "name": "",
+        "datasetFolder": "/Users/ricks/.node-red/node_modules/node-red-contrib-machine-learning-v2/test/datasetscav1",
+        "datasetName": "cav",
+        "partition": "train.csv",
+        "input": true,
+        "output": true,
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "0645f28be3c5d803"
+            ],
+            [
+                "86385870.9f6b88"
+            ]
+        ]
+    },
+    {
+        "id": "4f7cc53d.87a22c",
+        "type": "inject",
+        "z": "95858355184c4b42",
+        "name": "start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "da8ca300.2dfe6"
+            ]
+        ]
+    },
+    {
+        "id": "d3e9e7ab.a06d68",
+        "type": "inject",
+        "z": "95858355184c4b42",
+        "name": "start",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            [
+                "44b6f4b0.34d7dc"
+            ]
+        ]
+    },
+    {
+        "id": "4fb0a8dc.f6baf8",
+        "type": "debug",
+        "z": "95858355184c4b42",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "86385870.9f6b88",
+        "type": "debug",
+        "z": "95858355184c4b42",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2270c854.c34e08",
+        "type": "debug",
+        "z": "95858355184c4b42",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 750,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a6e9ef06d80d426b",
+        "type": "inject",
+        "z": "95858355184c4b42",
+        "name": "start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 540,
+        "wires": [
+            [
+                "1ab65c2bdc0b65c9",
+                "f46ce7bba472fa5b"
+            ]
+        ]
+    },
+    {
+        "id": "5367a6d8a109d8b8",
+        "type": "assessment",
+        "z": "95858355184c4b42",
+        "name": "Accuracy",
+        "score": "accuracy_score",
+        "x": 520,
+        "y": 460,
+        "wires": [
+            [
+                "090746ecc4cf42b5"
+            ],
+            [
+                "448e60a6beb573c1"
+            ]
+        ]
+    },
+    {
+        "id": "1ab65c2bdc0b65c9",
+        "type": "load dataset",
+        "z": "95858355184c4b42",
+        "name": "",
+        "datasetFolder": "/Users/ricks/.node-red/node_modules/node-red-contrib-machine-learning-v2/test/datasetscav1",
+        "datasetName": "cav",
+        "partition": "test.csv",
+        "input": false,
+        "output": true,
+        "x": 230,
+        "y": 460,
+        "wires": [
+            [
+                "5367a6d8a109d8b8"
+            ],
+            [
+                "448e60a6beb573c1"
+            ]
+        ]
+    },
+    {
+        "id": "f46ce7bba472fa5b",
+        "type": "load dataset",
+        "z": "95858355184c4b42",
+        "name": "",
+        "datasetFolder": "/Users/ricks/.node-red/node_modules/node-red-contrib-machine-learning-v2/test/datasetscav1",
+        "datasetName": "cav",
+        "partition": "test.csv",
+        "input": true,
+        "output": false,
+        "x": 230,
+        "y": 580,
+        "wires": [
+            [
+                "ebf2d29eccfccb7c"
+            ],
+            [
+                "448e60a6beb573c1"
+            ]
+        ]
+    },
+    {
+        "id": "448e60a6beb573c1",
+        "type": "debug",
+        "z": "95858355184c4b42",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "090746ecc4cf42b5",
+        "type": "debug",
+        "z": "95858355184c4b42",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 750,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "769de6b8670391eb",
+        "type": "debug",
+        "z": "95858355184c4b42",
+        "name": "error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 730,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "127affef48d88c9e",
+        "type": "inject",
+        "z": "95858355184c4b42",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ns=4;i=2;datatype=Float",
+        "payloadType": "date",
+        "x": 110,
+        "y": 720,
+        "wires": [
+            [
+                "dc396d53722ac5ba",
+                "694b5d962ef13f90"
+            ]
+        ]
+    },
+    {
+        "id": "dc396d53722ac5ba",
+        "type": "OpcUa-Client",
+        "z": "95858355184c4b42",
+        "endpoint": "3ba2f05e567fbad2",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "name": "",
+        "x": 260,
+        "y": 660,
+        "wires": [
+            [
+                "ddea7b3fd1394f5e"
+            ]
+        ]
+    },
+    {
+        "id": "137fcc6c796fbed2",
+        "type": "debug",
+        "z": "95858355184c4b42",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "694b5d962ef13f90",
+        "type": "ui_chart",
+        "z": "95858355184c4b42",
+        "name": "",
+        "group": "2f132733cce481ca",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Current",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "150",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 260,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ddea7b3fd1394f5e",
+        "type": "predictor",
+        "z": "95858355184c4b42",
+        "name": "support vector machine predictor",
+        "modelPath": "",
+        "modelName": "svm.b",
+        "x": 480,
+        "y": 720,
+        "wires": [
+            [
+                "137fcc6c796fbed2"
+            ],
+            [
+                "769de6b8670391eb"
+            ]
+        ]
+    },
+    {
+        "id": "ebf2d29eccfccb7c",
+        "type": "predictor",
+        "z": "95858355184c4b42",
+        "name": "support vector machine predictor",
+        "modelPath": "/Users/jonat/.node-red/node_modules/node-red-contrib-machine-learning-v2/test/models",
+        "modelName": "svm.b",
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "5367a6d8a109d8b8"
+            ],
+            [
+                "448e60a6beb573c1"
+            ]
+        ]
+    },
+    {
+        "id": "0645f28be3c5d803",
+        "type": "support vector classifier",
+        "z": "95858355184c4b42",
+        "name": "support vector machine trainer",
+        "savePath": "/Users/jonat/.node-red/node_modules/node-red-contrib-machine-learning-v2/test/models/dataCav2.csv",
+        "saveName": "svm.b",
+        "c": "",
+        "kernel": "rbf",
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [
+                "2270c854.c34e08"
+            ],
+            [
+                "86385870.9f6b88"
+            ]
+        ]
+    },
+    {
+        "id": "07878be431c357ea",
+        "type": "ui_gauge",
+        "z": "66c72f5b526ee6ca",
+        "name": "",
+        "group": "60c1c0d5676556b6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Estado de operação",
+        "label": "Estado",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "Vazio",
+        "seg2": "Cavitação",
+        "className": "",
+        "x": 1030,
+        "y": 320,
+        "wires": []
+    }
+]

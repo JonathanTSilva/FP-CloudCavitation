@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">
   <br>
-  <a href="https://github.com/JonathanTSilva/TP-IFSP"><img src="./Images/logo-tcc.png" alt="Markdownify" width="200"></a>
+  <a href="https://github.com/JonathanTSilva/FP-CloudCavitation"><img src="./Images/logo-tcc.png" alt="Markdownify" width="200"></a>
   <br>
   Final Project - Electrical Engineer
   <br>
@@ -13,20 +13,20 @@
 
 <!-- PROJECT SHIELDS -->
 <p align="center">
-  <a href="https://github.com/JonathanTSilva/TP-IFSP/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/JonathanTSilva/TP-IFSP.svg?style=for-the-badge" alt="Contributors">
+  <a href="https://github.com/JonathanTSilva/FP-CloudCavitation/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge" alt="Contributors">
   </a>
-  <a href="https://github.com/JonathanTSilva/TP-IFSP/network/members">
-    <img src="https://img.shields.io/github/forks/JonathanTSilva/TP-IFSP.svg?style=for-the-badge" alt="Members">
+  <a href="https://github.com/JonathanTSilva/FP-CloudCavitation/network/members">
+    <img src="https://img.shields.io/github/forks/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge" alt="Members">
   </a>
-  <a href="https://github.com/JonathanTSilva/TP-IFSP/stargazers">
-    <img src="https://img.shields.io/github/stars/JonathanTSilva/TP-IFSP.svg?style=for-the-badge" alt="Stargazers">
+  <a href="https://github.com/JonathanTSilva/FP-CloudCavitation/stargazers">
+    <img src="https://img.shields.io/github/stars/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge" alt="Stargazers">
   </a>
-  <a href="https://github.com/JonathanTSilva/TP-IFSP/issues">
-    <img src="https://img.shields.io/github/issues/JonathanTSilva/TP-IFSP.svg?style=for-the-badge" alt="Issues">
+  <a href="https://github.com/JonathanTSilva/FP-CloudCavitation/issues">
+    <img src="https://img.shields.io/github/issues/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge" alt="Issues">
   </a>
-  <a href="https://github.com/JonathanTSilva/TP-IFSP/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/JonathanTSilva/TP-IFSP.svg?style=for-the-badge" alt="License">
+  <a href="https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge" alt="License">
   </a>
 </p>
 
@@ -53,11 +53,11 @@ Intelligent equipment failure diagnosis systems are essential in industries to p
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/JonathanTSilva/TP-IFSP/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/LICENSE) for more information.
 
 ## Contact
 [Jonathan T. da Silva](https://www.linkedin.com/in/JonathanTSilva/) - jonathan.t@aluno.ifsp.edu.br <br/>
-Project Link: [JonathanTSilva/TP-IFSP](https://github.com/JonathanTSilva/TP-IFSP)
+Project Link: [JonathanTSilva/FP-CloudCavitation](https://github.com/JonathanTSilva/FP-CloudCavitation)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- Caso utilize as imagens em markdown, sempre seguir este padrão!-->
@@ -72,16 +72,16 @@ Project Link: [JonathanTSilva/TP-IFSP](https://github.com/JonathanTSilva/TP-IFSP
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!--
-[contributors-shield]: https://img.shields.io/github/contributors/JonathanTSilva/TP-IFSP.svg?style=for-the-badge
-[contributors-url]: https://github.com/JonathanTSilva/TP-IFSP/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/JonathanTSilva/TP-IFSP.svg?style=for-the-badge
-[forks-url]: https://github.com/JonathanTSilva/TP-IFSP/network/members
-[stars-shield]: https://img.shields.io/github/stars/JonathanTSilva/TP-IFSP.svg?style=for-the-badge
-[stars-url]: https://github.com/JonathanTSilva/TP-IFSP/stargazers
-[issues-shield]: https://img.shields.io/github/issues/JonathanTSilva/TP-IFSP.svg?style=for-the-badge
-[issues-url]: https://github.com/JonathanTSilva/TP-IFSP/issues
-[license-shield]: https://img.shields.io/github/license/JonathanTSilva/TP-IFSP.svg?style=for-the-badge
-[license-url]: https://github.com/JonathanTSilva/TP-IFSP/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
+[contributors-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
+[forks-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/network/members
+[stars-shield]: https://img.shields.io/github/stars/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
+[stars-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/stargazers
+[issues-shield]: https://img.shields.io/github/issues/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
+[issues-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/issues
+[license-shield]: https://img.shields.io/github/license/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
+[license-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/JonathanTSilva/
 -->

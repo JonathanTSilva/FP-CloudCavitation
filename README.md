@@ -47,9 +47,15 @@ Intelligent equipment failure diagnosis systems are essential in industries to p
 
 ## Getting Started
 
+
+
 ## Quick Guide
 
+
+
 ## Contributing
+
+
 
 ## License
 

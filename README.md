@@ -55,9 +55,7 @@ This project was presented to a panel of doctors and engineers and is available 
 
 And the presentation file is available in this repository and can be accessed by clicking on the following image:
 
-![presentation][presentation]
-
-
+![presenting](https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/Images/presenting1.png)
 
 ## Contributing
 
@@ -105,7 +103,6 @@ Project Link: [JonathanTSilva/FP-CloudCavitation](https://github.com/JonathanTSi
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[presentation]: https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/Images/presenting1.png
 -->
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

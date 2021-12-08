@@ -47,9 +47,11 @@ Intelligent equipment failure diagnosis systems are essential in industries to p
 
 ## Getting Started
 
-## Quick Guide
+## Presentation
 
+This project was presented to a panel of doctors and engineers and is available for access at the following link:
 
+[Google Drive - Apresentação TCC - CloudComputing](https://drive.google.com/file/d/1-q3eH92pAjtBhJ_9P_Q8aBZSZsS9M6MM/view?usp=sharing)
 
 ## Contributing
 

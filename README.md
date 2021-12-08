@@ -105,7 +105,7 @@ Project Link: [JonathanTSilva/FP-CloudCavitation](https://github.com/JonathanTSi
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[presentation]: https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/Images/presentation1.png
+[presentation]: https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/Images/presenting1.png
 -->
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

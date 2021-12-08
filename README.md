@@ -53,6 +53,10 @@ This project was presented to a panel of doctors and engineers and is available 
 
 [Google Drive - Apresentação TCC - CloudComputing](https://drive.google.com/file/d/1-q3eH92pAjtBhJ_9P_Q8aBZSZsS9M6MM/view?usp=sharing)
 
+And the presentation file is available in this repository through this [LINK]().
+
+
+
 ## Contributing
 
 If you want to contribute to this project and make it better, your help is very welcome.

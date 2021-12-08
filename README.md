@@ -55,7 +55,7 @@ This project was presented to a panel of doctors and engineers and is available 
 
 And the presentation file is available in this repository and can be accessed by clicking on the following image:
 
-![presentation1]
+![presentation][presentation1]
 
 
 

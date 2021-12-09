@@ -49,7 +49,7 @@ Intelligent equipment failure diagnosis systems are essential in industries to p
 
 <p float="left">
   <a href="https://nodered.org/">
-    <img height="35" src="https://ajornadadetchellita.files.wordpress.com/2017/07/node-red-icon-2.png?w=512" alt="NodeRED">
+    <img height="40" src="https://ajornadadetchellita.files.wordpress.com/2017/07/node-red-icon-2.png?w=512" alt="NodeRED">
   </a>
   <img height="40" src="https://s3.amazonaws.com/static.graphemica.com/glyphs/i300s/000/001/283/original/002B-300x300.png?1275289856" alt="plusSymbol">
   <a href="https://new.siemens.com/br/pt/produtos/software/industria/automacao/tia-portal.html">

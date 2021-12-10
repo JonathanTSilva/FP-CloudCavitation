@@ -107,29 +107,3 @@ Distributed under the MIT License. See [LICENSE](https://github.com/JonathanTSil
 Project Link: [JonathanTSilva/FP-CloudCavitation](https://github.com/JonathanTSilva/FP-CloudCavitation)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- Caso utilize as imagens em markdown, sempre seguir este padrão!-->
-<!--
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
--->
-
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!--
-[contributors-shield]: https://img.shields.io/github/contributors/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
-[contributors-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
-[forks-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/network/members
-[stars-shield]: https://img.shields.io/github/stars/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
-[stars-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/stargazers
-[issues-shield]: https://img.shields.io/github/issues/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
-[issues-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/issues
-[license-shield]: https://img.shields.io/github/license/JonathanTSilva/FP-CloudCavitation.svg?style=for-the-badge
-[license-url]: https://github.com/JonathanTSilva/FP-CloudCavitation/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/JonathanTSilva/
--->
-<!-- [product-screenshot]: -->
